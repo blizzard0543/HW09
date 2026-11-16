@@ -1,0 +1,93 @@
+/* 定義全域顏色變數 */
+:root {
+    --bg-color: #121212;
+    --canvas-bg: #000000;
+    --snake-color: #4CAF50;
+    --snake-head-color: #66BB6A;
+    --food-color: #FF5252;
+    --text-primary: #FFFFFF;
+    --text-secondary: #E0E0E0;
+    --btn-hover: #388E3C;
+}
+
+/* 基礎樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace; /* 復古風格字體 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 容器置中與排版 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.score-board {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 遊戲畫布支援 RWD */
+canvas {
+    background-color: var(--canvas-bg);
+    border: 2px solid var(--text-secondary);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* 保持正方形比例 */
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 統一按鈕樣式 */
+.btn {
+    background-color: var(--snake-color);
+    color: var(--text-primary);
+    border: none;
+    padding: 10px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}

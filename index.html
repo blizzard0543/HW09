@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貪吃蛇遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">貪吃蛇</h1>
+            <div class="score-board">分數: <span id="score">0</span></div>
+        </header>
+        
+        <main>
+            <section class="game-area">
+                <!-- 設定固定寬高，RWD 將透過 CSS 控制縮放 -->
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+            </section>
+            
+            <section class="controls">
+                <button id="startBtn" class="btn">開始遊戲</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
