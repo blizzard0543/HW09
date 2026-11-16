@@ -256,4 +256,4 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.textContent = '重新開始';
         startBtn.blur(); // 移除焦點，避免遊戲進行中按空白鍵誤觸
     });
-});
+}); 
